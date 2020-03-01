@@ -1,7 +1,7 @@
 {
-  "name": "@prisma-cms/module-bilerplate",
-  "description": "Module boilerplate for @prisma-cms/server",
-  "version": "1.1.6",
+  "name": "@prisma-cms/sberbank-module",
+  "description": "Sberbank module for @prisma-cms/server",
+  "version": "1.2.0-alpha",
   "main": "src/",
   "files": [
     "src"
@@ -11,7 +11,7 @@
     "start-dev": "action=start-server nodemon --experimental-modules src/server",
     "deploy": "NODE_ENV=test node --experimental-modules src/server/scripts/deploy/with-prisma",
     "build-api": "node --experimental-modules src/server/scripts/deploy/api-only",
-    "test": "NODE_OPTIONS=\"--experimental-modules\" yarn mocha --delay __tests__/"
+    "test": "NODE_OPTIONS=\"--experimental-modules\" yarn --max-old-space-size=2500 mocha --delay __tests__/"
   },
   "dependencies": {
     "@prisma-cms/prisma-module": "latest",
@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@prisma-cms/server": "latest",
+    "dotenv": "^8.2.0",
     "eslint": "^6.7.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.18.2",
@@ -42,14 +43,15 @@
   "keywords": [
     "prisma-cms",
     "server",
-    "boilerplate"
+    "payment",
+    "sberbank"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/prisma-cms/module-boilerplate.git"
+    "url": "git+https://github.com/prisma-cms/sberbank-module.git"
   },
   "bugs": {
-    "url": "https://github.com/prisma-cms/module-boilerplate/issues"
+    "url": "https://github.com/prisma-cms/sberbank-module/issues"
   },
-  "homepage": "https://github.com/prisma-cms/module-boilerplate#readme"
+  "homepage": "https://github.com/prisma-cms/sberbank-module#readme"
 }

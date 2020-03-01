@@ -1,5 +1,9 @@
 
-const {sync: globSync} = require("glob");
+const dotenv = require('dotenv');
+
+dotenv.config();
+
+const { sync: globSync } = require("glob");
 
 const cwd = process.cwd();
 

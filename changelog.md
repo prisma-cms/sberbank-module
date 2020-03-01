@@ -1,3 +1,9 @@
+1.2.0-alpha
+===============================
+- Added sberbankGetOrderStatusExtended query
+- Added sberbankPayment mutation
+- Added sberbankRegister mutation
+
 1.1.6
 ===============================
 - Added eslint

@@ -1,4 +1,5 @@
 
+import dotenv from 'dotenv';
 
 import {
   modifyArgs,
@@ -6,6 +7,8 @@ import {
 } from '@prisma-cms/server'
 
 import CoreModule from '../'
+
+dotenv.config();
 
 const coreModule = new CoreModule({
 })

@@ -17,5 +17,13 @@ module.exports = {
   rules: {
     "no-multiple-empty-lines": "off",
     "comma-dangle": "off",
+    "semi": "off",
+    "quotes": "off",
+    "brace-style": "off",
+    "padded-blocks": "off",
+    "space-before-function-paren": "off",
+    "generator-star-spacing": "off",
+    "no-cond-assign": "off",
+    "camelcase": "off",
   }
 }

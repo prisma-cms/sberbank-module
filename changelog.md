@@ -1,3 +1,7 @@
+1.2.1-alpha
+===============================
+- Fix request
+
 1.2.0-alpha
 ===============================
 - Added sberbankGetOrderStatusExtended query

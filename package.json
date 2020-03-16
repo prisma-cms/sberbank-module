@@ -1,7 +1,7 @@
 {
   "name": "@prisma-cms/sberbank-module",
   "description": "Sberbank module for @prisma-cms/server",
-  "version": "1.2.0-alpha",
+  "version": "1.2.1-alpha",
   "main": "src/",
   "files": [
     "src"

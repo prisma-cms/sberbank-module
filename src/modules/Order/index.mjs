@@ -1,7 +1,7 @@
 
 import PrismaModule from '@prisma-cms/prisma-module'
 import PrismaProcessor from '@prisma-cms/prisma-processor'
-import { request } from '../'
+import { request } from '../../'
 
 
 export class OrderProcessor extends PrismaProcessor {

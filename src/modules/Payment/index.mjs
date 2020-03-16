@@ -2,16 +2,25 @@
 import PrismaModule from '@prisma-cms/prisma-module'
 import PrismaProcessor from '@prisma-cms/prisma-processor'
 
+import Debug from 'debug';
+
+const debug = Debug('sberbank-module:payment');
 
 const request = async function (data) {
 
-  // const {
-  //   SBERBANK_ENDPOINT,
-  // } = process.env;
+  const {
+    SBERBANK_ENDPOINT: endpoint,
+  } = process.env
 
-  const endpoint = 'https://3dsec.sberbank.ru'
+  if (!endpoint) {
+    throw new Error('SBERBANK_ENDPOINT env is empty');
+  }
+
+  // const endpoint = 'https://3dsec.sberbank.ru'
 
   const url = `${endpoint}/payment/google/payment.do`
+
+  debug('request url', url);
 
   const result = await fetch(url, {
     method: 'POST',
